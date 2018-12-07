@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <h1>Photos from Curiosity Rover on Mars!</h1>
+  <form id="form" action="">
+    <label for="cam-select">Choose a camera:</label>
+    
+    <select id="cam-select">
+      <option value="NAVCAM">Navigation Camera</option>
+      <option value="FHAZ">Front Hazard Avoidance Camera</option>
+      <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+      <option value="MAST">Mast Camera</option>
+      <option value="CHEMCAM">Chemistry and Camera Complex</option>
+      <option value="MAHLI">Mars Hand Lens Imager</option>
+      <option value="MARDI">Mars Descent Imager</option>
+    </select>
+    <br>
+    <label for="start">Start date:</label>
+    
+    <input type="date" id="date" name="date" value="2018-12-06" min="2012-08-20" max="2018-12-06">
+    <br>
+    <button id="submit" type="submit">Go!</button>
+  </form>
+  <div id="container"></div>
+
+  <script src='./index.js'></script>
+</body>
+</html>
